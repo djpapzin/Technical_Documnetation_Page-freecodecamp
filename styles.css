@@ -1,0 +1,73 @@
+/* Add your CSS styles here */
+.container {
+  display: flex;
+}
+
+#navbar {
+  width: 250px; /* Updated width */
+  height: 100vh;
+  background-color: #f1f1f1;
+  padding: 20px;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+#navbar header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#navbar hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+#main-doc {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.main-section header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #navbar {
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
